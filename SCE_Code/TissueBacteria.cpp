@@ -3,7 +3,7 @@
 //  Myxobacteria
 //
 //  Created by Alireza Ramezani on 10/8/20.
-//  Copyright © 2020 Alireza Ramezani. All rights reserved.
+//  Copyright © 2020 Alireza Ramezani and Austin Hansen. All rights reserved.
 //
 
 #include "TissueBacteria.hpp"
