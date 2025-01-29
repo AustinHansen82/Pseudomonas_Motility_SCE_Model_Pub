@@ -3,8 +3,8 @@ Code for "Modeling Study of the Role of Wrap Mode and Reversals in Pseudomonas a
 The main code for modeling the migration of Pseudomonas aeruginosa is written in C++. The code is set up to simulate the migration of 100 bacterium towards a simple point source of chemoattractant. The concentration of the chemoattractant increases linearly in the radial direction toward the source. 
 
 To run the code and reproduce Figure 4ABC of the paper
-  1) Download the main folder
-  2) Compile the code through the command "g++ *.cpp -std=c++11"
+  1) Download the repository folder
+  2) In the folder SCE_Code, compile the code through the command "g++ *.cpp -std=c++11"
   3) Run each simulation by the command "./a.out -slurm #" where # is the simulation number (1 and 2)
   4) Once the two simulations have finished, run the matlab script titled "Bacteria_PostProcess_Combined_Figure4ABC" - this will generate a folder and stored the figure in the folder 
 
