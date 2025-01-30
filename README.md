@@ -1,5 +1,4 @@
 # Pseudomonas_Motility_SCE_Model_Pub
-[![DOI](https://zenodo.org/badge/924326088.svg)](https://doi.org/10.5281/zenodo.14768429)
 Code for "Modeling Study of the Role of Wrap Mode and Reversals in Pseudomonas aeruginosa Motion"
 The main code for modeling the migration of Pseudomonas aeruginosa is written in C++. The code is set up to simulate the migration of 100 bacterium towards a simple point source of chemoattractant. The concentration of the chemoattractant increases linearly in the radial direction toward the source. 
 
@@ -18,3 +17,4 @@ Notes:
   1) There is a folder titled - "Simulation_Resource_Files" which contains all of the parameter files run for the simulations in the paper "Modeling Study of the Role of Wrap Mode and Reversals in Pseudomonas aeruginosa Motion"
   2) There is a folder titled - "Chemoattractant_Concentrations" which contains all of the chemoattractant concentrations used in the paper "Modeling Study of the Role of Wrap Mode and Reversals in Pseudomonas aeruginosa Motion". When using these, the folder location will need to be changed to match your environment. This can be found in the file "TissueGrid.cpp" in the function "Create_Experimental_Gradient"
   3) Some of the simulations in the paper "Modeling Study of the Role of Wrap Mode and Reversals in Pseudomonas aeruginosa Motion" require minor changes to the code based based on the simulation designs. 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14768453.svg)](https://doi.org/10.5281/zenodo.14768453)
