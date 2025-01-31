@@ -27,7 +27,7 @@ t_in = [] ;
 t_to = [] ;
 
 
-for k = 1:2
+for k = 7:8
     for fileNum = 1:2001
         % disp(fileNum)
 
@@ -35,12 +35,12 @@ for k = 1:2
         fileID = fopen(filename);
         C = textscan(fileID,'%f %f %f %f %f %f %f','Delimiter','\t');
         fclose(fileID);
-        b_trajectoriesX(fileNum,:,k) = [transpose( C{1}) ] ;
-        b_trajectoriesY(fileNum,:,k) = [transpose( C{2}) ] ;
-        b_locVelocity(fileNum,:,k)   = [transpose( C{3}) ] ;
-        b_locFriction(fileNum,:,k)   = [transpose( C{4}) ] ;
-        b_Orientation(fileNum,:,k)   = [transpose( C{5}) ] ;
-        b_chemical(fileNum,:,k)      = [transpose( C{6}) ] ;
+        b_trajectoriesX(fileNum,:,k-6) = [transpose( C{1}) ] ;
+        b_trajectoriesY(fileNum,:,k-6) = [transpose( C{2}) ] ;
+        b_locVelocity(fileNum,:,k-6)   = [transpose( C{3}) ] ;
+        b_locFriction(fileNum,:,k-6)   = [transpose( C{4}) ] ;
+        b_Orientation(fileNum,:,k-6)   = [transpose( C{5}) ] ;
+        b_chemical(fileNum,:,k-6)      = [transpose( C{6}) ] ;
 
     end
 end

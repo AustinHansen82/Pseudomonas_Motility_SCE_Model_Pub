@@ -346,7 +346,7 @@ void TissueBacteria::SwarmingInitialization ()
 //-----------------------------------------------------------------------------------------------------
 void TissueBacteria::CenterInitialization()
 {
-    double raduis = 0.2 * sqrt(domainx * domainx  )/2.0 ;
+    double raduis = 0.05 * sqrt(domainx * domainx  )/2.0 ;
     double cntrX = domainx/2.0 ;
     double cntrY = domainy/2.0 ;
     
@@ -1483,8 +1483,8 @@ void TissueBacteria:: Check_Perform_AllReversing_andWrapping()
                     //bacteria[i].maxRunDuration = bacteria[i].LogNormalMaxRunDuration(wrapDuration_distribution,wrapDuration_seed, lognormal_wrap_a, run_calibrated, 1.0/bacteria[i].wrapRate ) ;
                   //  bacteria[i].wrapAngle = (2.0*(rand() / (RAND_MAX + 1.0))-1.0 ) * bacteria[i].maxWrapAngle ;
                   //  bacteria[i].wrapAngle = (2.0*(rand() / (RAND_MAX + 1.0))-1.0 ) * bacteria[i].maxTurnAngle ; // Used for Wrap Angle Calibration
-                    bacteria[i].wrapAngle = 180 - (51.08*exp(-1.439*bacteria[i].maxRunDuration)+87.02);
-                    //bacteria[i].wrapAngle = bacteria[i].maxWrapAngle;
+                    //bacteria[i].wrapAngle = 180 - (51.08*exp(-1.439*bacteria[i].maxRunDuration)+87.02);
+                    bacteria[i].wrapAngle = bacteria[i].maxWrapAngle;
                     bacteria[i].wrapAngle = bacteria[i].wrapAngle/(398.67*bacteria[i].maxRunDuration);
                     //bacteria[i].wrapAngle = wrapAngle_distribution(wrapAngle_seed);
                     if ( rand() / (RAND_MAX + 1.0) < 0.5)
@@ -1553,8 +1553,8 @@ void TissueBacteria:: Check_Perform_AllReversing_andWrapping()
                     //bacteria[i].maxRunDuration = bacteria[i].LogNormalMaxRunDuration(wrapDuration_distribution,wrapDuration_seed, lognormal_wrap_a, run_calibrated, 1.0/bacteria[i].wrapRate) ;
                   //  bacteria[i].wrapAngle = (2.0*(rand() / (RAND_MAX + 1.0))-1.0 ) * bacteria[i].maxWrapAngle ;
                   //  bacteria[i].wrapAngle = (2.0*(rand() / (RAND_MAX + 1.0))-1.0 ) * bacteria[i].maxTurnAngle ; // Used for Wrap Angle Calibration
-                    bacteria[i].wrapAngle = 180 - (51.08*exp(-1.439*bacteria[i].maxRunDuration)+87.02);
-                    //bacteria[i].wrapAngle = bacteria[i].maxWrapAngle;
+                    //bacteria[i].wrapAngle = 180 - (51.08*exp(-1.439*bacteria[i].maxRunDuration)+87.02);
+                    bacteria[i].wrapAngle = bacteria[i].maxWrapAngle;
                     bacteria[i].wrapAngle = bacteria[i].wrapAngle/(398.67*bacteria[i].maxRunDuration);
                     //bacteria[i].wrapAngle = wrapAngle_distribution(wrapAngle_seed);
                     if ( rand() / (RAND_MAX + 1.0) < 0.5)
